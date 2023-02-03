@@ -1,6 +1,6 @@
 # Jenkins Lab 1
 
-### install jenkins with docker image
+## 1- Install jenkins with docker image
 
 ```bash
 docker run -d -p 8083:8080 jenkins/jenkins:lts 
@@ -21,7 +21,7 @@ cat <password-path>
 
 ----------------
 
-### install role based authorization plugin
+## 2- Install role based authorization plugin
 
 - In manage Plugins Install the plugin then restart jenkins
 
@@ -31,14 +31,14 @@ cat <password-path>
 
 ---------------
 
-### create new user
+## 2- Create new user
 
 
 ![Screenshot from 2023-02-03 23-14-09](https://user-images.githubusercontent.com/103090890/216730050-89a07258-3451-4179-8e70-add36864e092.png)
 
 --------------
 
-### create read role and assign it to the new user
+## 3- Create read role and assign it to the new user
 
 
 ![Screenshot from 2023-02-03 23-27-52](https://user-images.githubusercontent.com/103090890/216730072-131051f6-bdf3-4027-842f-154baf9daf09.png)
@@ -49,7 +49,7 @@ cat <password-path>
 
 -----------
 
-### create free style pipeline and link it to private git repo(inside it create directory and create file with "hello world")
+## 4- Create free style pipeline and link it to private git repo(inside it create directory and create file with "hello world")
 
 
 - Provide Repo URL then porivde credentials as Usrname and Password but use ***Access Token***
@@ -68,7 +68,7 @@ cat <password-path>
 
 ----------
 
-### create declarative in jenkins GUI pipeline for your own repo to do "ls"
+## 5- Create declarative in jenkins GUI pipeline for your own repo to do "ls"
 
 - I used 2 ways to do pass Credentials
 1- Passed credentials ID to the script this ID is found in ***var/jenkins_home/credentials.xml***
@@ -78,9 +78,9 @@ cat <password-path>
 ![Screenshot from 2023-02-04 00-56-08](https://user-images.githubusercontent.com/103090890/216730682-f2c777df-a606-43cb-8e37-3595ec32a7fa.png)
 
 
+---------------
 
-
-### create scripted in jenkins GUI pipeline for your own repo to do "ls"
+## 6- Create scripted in jenkins GUI pipeline for your own repo to do "ls"
 
 - Same as declartive way with different syntax
 
@@ -90,9 +90,9 @@ cat <password-path>
 
 ![Screenshot from 2023-02-04 01-01-36](https://user-images.githubusercontent.com/103090890/216730803-ff4de700-3101-45bb-a874-b091ce9d8589.png)
 
+-------------
 
-
-### create the same with jenkinsfile in your branches as multibranch pipeline
+## 7- Create the same with jenkinsfile in your branches as multibranch pipeline
 
 - Each Branch has a Jenkinsfile
 - The pipeline checks every branch for this files then run pipeline for each branch
@@ -110,6 +110,10 @@ cat <password-path>
 
 ![Screenshot from 2023-02-04 01-22-12](https://user-images.githubusercontent.com/103090890/216730962-fe17f5b1-1758-4f06-bf83-30b1f2e019de.png)
 
+
+---------------
+
+# Thank You !
 
 
 
