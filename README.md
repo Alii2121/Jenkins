@@ -71,8 +71,8 @@ cat <password-path>
 ## 5- Create declarative in jenkins GUI pipeline for your own repo to do "ls"
 
 - I used 2 ways to do pass Credentials
-1- Passed credentials ID to the script this ID is found in ***var/jenkins_home/credentials.xml***
-2- You can choose option from GUI to pull from SCM and provide credentials there
+ - 1- Passed credentials ID to the script this ID is found in ***var/jenkins_home/credentials.xml***
+ - 2- You can choose option from GUI to pull from SCM and provide credentials there
 
 
 ![Screenshot from 2023-02-04 00-56-08](https://user-images.githubusercontent.com/103090890/216730682-f2c777df-a606-43cb-8e37-3595ec32a7fa.png)
