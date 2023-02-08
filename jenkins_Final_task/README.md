@@ -104,6 +104,7 @@ agent { node { label 'slave' } }
 
 - The Pipeline Script is included inside this repo
 - Install Terraform Plugin
+- Make sure you include installation of Terraform inside the Dockerfile of Container or inside the script
 - Automate the Process of creating infrastructure
 - This pipeline destroys the infrastructure after successful build ***to avoid costs***
 
