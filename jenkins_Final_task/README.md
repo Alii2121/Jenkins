@@ -105,7 +105,7 @@ agent { node { label 'slave' } }
 - The Pipeline Script is included inside this repo
 - Install Terraform Plugin
 - Automate the Process of creating infrastructure
-- This pipeline destroys the infrastructure after successful buil ***to avoid costs***
+- This pipeline destroys the infrastructure after successful build ***to avoid costs***
 
 ![Screenshot from 2023-02-08 17-01-26](https://user-images.githubusercontent.com/103090890/217601944-8b1e2e46-e906-4e83-9bef-904acf5c83bf.png)
 
